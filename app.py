@@ -24,7 +24,7 @@ def generate():
         client = get_client()
         msgs = messages if messages else [{"role":"user","content":prompt}]
         response = client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-6",
             max_tokens=1200,
             system="Tu es expert en communication B2B pour organismes de formation en alternance. Tu rédiges des mails de mise en relation percutants, humains et efficaces pour convaincre des entreprises d'accueillir des alternants. Réponds toujours en français.",
             messages=msgs
